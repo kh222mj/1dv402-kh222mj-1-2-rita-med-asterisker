@@ -10,10 +10,9 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-
             for (int row = 0; row < 25; row++)
             {
-                
+                //Färgsättning på rader
                 switch(row % 3)
                 {
                     case 0:
@@ -27,19 +26,16 @@ namespace ConsoleApplication2
                         break;
                 }
                 
-                
+                //Skjuter in raden
                 if (row % 2 == 1)
                 {
                     Console.Write(" ");
-
-
                 }
+
+                //Skriv ut *
                 for (int col = 0; col < 39; col++)
                 {
-
                     Console.Write("* ");
-
-
                 }
 
                 Console.WriteLine();
